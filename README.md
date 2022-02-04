@@ -1,2 +1,2 @@
-# jiminy_site
+# Digit100_Jiminy_Site
 personal
