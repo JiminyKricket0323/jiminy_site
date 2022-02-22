@@ -1,0 +1,56 @@
+*{
+   padding:0;
+   margin:0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Garamond; 
+   
+     
+    
+}
+
+nav{
+    background: #bccad6;
+    height: 70px;
+    width: 100%;
+}
+ label.logo{
+     color: black;
+     font-size: 40px; 
+     line-height: 80px;
+     padding: 0 100px;
+     font-weight: bold;
+}
+nav ul{
+         float: right;
+         margin-right: 45px;
+    
+}
+nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px; 
+     
+} 
+
+nav ul li a{
+     color: black;
+     font-size: 20px;
+     text-transform: uppercase;
+     
+         
+          }
+    
+     
+.More {
+    background: #daebe8;
+}
+
+
+    
+    
