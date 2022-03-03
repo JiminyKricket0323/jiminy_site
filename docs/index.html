@@ -9,116 +9,123 @@
     <head>
         <!-- NOT FOR DISPLAY. This is a "meta" area. -->
         <title>Continuexperience</title>
-        <meta charset="UTF-8" />
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Style.css"> </link>
-        
-        
-        
-        <!--2021-02-02 ebb: The code inside the <head> element is NOT FOR DISPLAY in the web browser, but it holds important information about the website's contents.
-    The text inside the <title> element appears in the top tab of a web browser. The <head> is where we will include info about styling the site, too. 
-    
-    Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"></link>
+         
+          
     </head>
 
     <body>
         
-        <nav>
-          <label class="logo">Continuexperience</label>
-            
-            <ul>
-                
-                <li> <a href="index.html">Home</a></li>   
-                <li> <a href="gallery.html">Gallery</a></li> 
-                <li> <a href="resume.html">Resume</a></li> 
-                <li> <a href="essays.html">Essays</a></li> 
-                <li> <a href="future.html">Future</a></li> 
-                <li> <a href="contact.html">Contact</a></li> 
-                
-                
-            </ul>
-              
-            
-        </nav>
         
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-       \
-        <section class="More">
+        
+        <section class="header">
             
-        <h1>More about Jimin...</h1>
+            <nav>
+                <a href="index.html"> <img src="image/logo.png" alt=""></img></a> 
+
+                  <div class="nav-links">
+                      <i class="fa fa-times"></i> 
+                   <ul>
+                        <li> <a href="index.html">Home</a></li>   
+                        <li> <a href="gallery.html">Gallery</a></li> 
+                        <li> <a href="resume.html">Resume</a></li> 
+                        <li> <a href="essays.html">Essays</a></li> 
+                        <li> <a href="future.html">Future</a></li> 
+                        <li> <a href="contact.html">Contact</a></li> 
+                  </ul>
+                 </div> 
+                    <i class="fa fa-bars"></i>
+               
+            </nav>  
+            
+         <div class="text-box">
+             <h1> Discover and Capture the Everyday Life </h1>
+             <p> - Recognising and remembering every minute and second of moments 
+                 of our lives that most of us go through without noticing how important and precious it is yet discovered.-</p>
+           <a href="" class= "click-box"> Want to Continue Experience?</a>
+             </div>
             
         </section>
         
-        <p> Hello everyone! This is one of those "All about me" page! Through this page, I hope you
-            can get to know me more :) </p>
-        <h2>Background</h2>
-        <p> I was born in Changwon, South Korea 2001. I have 2 siblings that's way older than me. My
-            brother is <strong>12 years</strong> older than me and my sister is <strong>9 years
-            </strong> older than me. YES I'm the spoiled baby at home!!!</p>
-        <h2>Whenever you ask me where I'm, I will never be at home.</h2>
-        <h4>This is the list of countries that I traveled.</h4>
-        <p>By clicking the text, it will open a new tap of the location of each country.</p>
-        <p class="important">This is a paragraph</p>
-        <ul>
-            <li><a
-                    href="https://www.google.com/maps/place/South+Korea/@35.7354629,123.3818031,6z/data=!3m1!4b1!4m5!3m4!1s0x356455ebcb11ba9b:0x91249b00ba88db4b!8m2!3d35.907757!4d127.766922"
-                    target="blank"> South Korea</a></li>
-            <li><a
-                    href="https://www.google.com/maps/place/New+Zealand/@-39.5088648,157.0131998,4z/data=!3m1!4b1!4m5!3m4!1s0x6d2c200e17779687:0xb1d618e2756a4733!8m2!3d-40.900557!4d174.885971"
-                    target="blank">New Zealand</a></li>
-            <li><a
-                    href="https://www.google.com/maps/place/Japan/@38.1320559,135.9112182,5z/data=!4m5!3m4!1s0x34674e0fd77f192f:0xf54275d47c665244!8m2!3d36.204824!4d138.252924"
-                    target="blank">Japan</a></li>
-            <li><a
-                    href="https://www.google.com/maps/place/China/@33.5416308,96.0337332,5z/data=!4m5!3m4!1s0x31508e64e5c642c1:0x951daa7c349f366f!8m2!3d35.86166!4d104.195397"
-                    target="blank">China</a></li>
-            <li><a
-                    href="https://www.google.com/maps/place/Thailand/@13.0003076,96.992706,6z/data=!3m1!4b1!4m5!3m4!1s0x304d8df747424db1:0x9ed72c880757e802!8m2!3d15.870032!4d100.992541"
-                    target="blank">Thailand</a></li>
-            <li><a
-                    href="https://www.google.com/maps/place/United+States/@38.8071602,-111.606813,4z/data=!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891"
-                    target="blank">USA</a></li>
-        </ul>
-       
-        <figure>
-            <img src="image/Busan.jpeg" width="400" />
-            <figcaption>
-                The famous night view of Gwangandaegyo (often called as Dimond Bridge) in Busan, which is the city I live in Korea.
-            </figcaption>
+    
+       <section class="travel">
+           <h1>Remember that happiness is a way of travel - not a destination</h1>
+           <p>-Roy M. Goodman-</p>
+           
+           <div class="row">
+               
+               <div class="happy">
+                   <h3> World1 </h3>
+                   <p>wefsefcsedfawrfffdd</p>
+               </div>
+               
+               <div class="happy">
+                   <h3> World2 </h3>
+                   <p>wefsefcsedfawrfffdd</p>
+               </div>
+               
+               <div class="happy">
+                   <h3> World3 </h3>
+                   <p>wefsefcsedfawrfffdd</p>
+               </div>
+               
+           </div>
+           
+           
+       </section>
+        
+        <section class="places">
+            <h1>-ing</h1>
+            <p>infinity</p>
             
-        </figure>
-        
-        
-        <h2>Starter HTML instructions</h2>
+            <div class="row">
+                <div class="places-col">
+                    <img src="image/aucklandsunset.JPG"></img>
+                    <div class="layer">
+                        <h3>NEW ZEALAND</h3>
+                    </div>
+                </div>
+                
+                <div class="places-col">
+                    <img src="image/tokyo.JPG"></img>
+                    <div class="layer">
+                        <h3>JAPAN</h3>
+                    </div>
+                </div>
+                
+                <div class="places-col">
+                    <img src="image/shanghai.JPG"></img>
+                    <div class="layer">
+                        <h3>CHINA</h3>
+                   </div>
+                </div>
+                
+                <div class="places-col">
+                    <img src="image/bangkok.jpg"></img>
+                    <div class="layer">
+                        <h3>THAILAND</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
        
-        <p>Let's replace the old index.html in your GitHub repo with this new one as you're starting
-            to learn HTML. The hardest part of this may be learning how to browse to find where you
-            saved your files in your GitHub repo. You'll get used to this with practice and some
-            organization.</p>
-        <ol>
-            <li>In oXygen, go to File >> Save As, and <b>carefully browse</b> to find your GitHub
-                repo and its <strong>docs/</strong> directory.</li>
-            <li>Save this file inside your docs/ directory as <b>index.html</b>. You should save
-                over any index.html you've already saved there to replace with this one. (Don't
-                capitalize index.html, spelling counts and you need the .html part at the end.)</li>
-            <li>Open your Bash shell (Windows) or Terminal (Mac) at your GitHub repo.</li>
-            <li>Use your git commands now. Check the <em>status</em> of your repo, <em>add</em> your
-                files for staging, <em>commit</em> them with a message, and <em>push</em> them to
-                the repo.</li>
-            <li>Check your GitHub repo on the <q>code view</q> and the web view to see your
-                updates.</li>
-        </ol>
-        <p>For a more detailed view of HTML, look at <a href="index.html">the actual index.html on
-                this introDH-Hub model website</a>. Feel free to work with that code as you're
-            learning HTML.</p>
-        <p>The easiest way we know to create a new page for your site is to save the current one
-            you're working on with a new filename in the same directory. Open the new file so you
-            can keep working. You'll need to create <a href="innerPage.html">a special kind of
-                relative link to connect the pages</a>, like this.</p>
+       <section class="footer">
+           <h4> To Reach Out</h4>
+           <p>text underneath the contact details</p>
+           <div class="icon">
+               <i class="fa fa-envelope"></i>
+               <i class="fa fa-youtube-play"></i>
+               <i class="fa fa-instagram"></i>
+           </div>
+           <p>Made with <i class="fa fa-heart-o"></i>by Jimin Kim</p>
+       </section>
+         
+       
+            
+        
+        
     </body>
 </html>
