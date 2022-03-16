@@ -266,39 +266,76 @@ padding: 18px 0;
 
 
 
+.galleryheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/mickey.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.gallerytext-box {
+    width: 100%;
+    color:  #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.gallerytext-box h1 {
+    font-size: 62px;
+}
+
+.nostalgia{
+    width: 90%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+
+}
+
+h2{
+    font-size:32px;
+    font-weight:600;
+    
+}
 
 
 
+.gi{
+
+ 
+    margin-bottom: 100px;
+    margin-left: 35%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.gi img{
+   
+    height:400px;
+    padding: 50px;
+    display: block;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.essaysheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/heavenstairs.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+ }
 
 
 
