@@ -339,11 +339,54 @@ h2{
 
 
 
+.reflectionessay p {
+margin: 40px 12px 40px;
+    font-size: 25px;
+    text-align:center
+     
+}
 
+.resumeheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/rotorua.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
+.resumetext-box {
+    width: 90%;
+    color:  #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+}
+ .resumetext-box h1 {
+    font-size: 62px;
+     
+}
 
+.resume{
+    padding: 50px;
+     width: 90%;
+    margin: auto;
+    text-align:center;
+    padding-top: 80px;
 
+}
 
+.resume h1{
+    font-size:32px;
+    font-weight:600;
+    padding-bottom: 30px;
+
+}
 
 
 
