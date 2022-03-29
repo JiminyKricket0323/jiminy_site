@@ -388,6 +388,15 @@ margin: 40px 12px 40px;
 
 }
 
+.container {
+    
+    width:560px;
+    height:315px;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
 
 
 
