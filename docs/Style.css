@@ -465,15 +465,67 @@ margin: 40px 12px 40px;
     text-align:center;
 }
 
+.gameanalysisheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.gameanalysistext-box {
+    width: 90%;
+    color:  #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+}
+ .gameanalysistext-box h1 {
+    font-size: 62px;
+
+}
+
+.kumu{
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 170px;
+ 
+}
+
+.kumutitle{
+    padding-left: 30px;
+    color: #395E18;
+}
+
+.GAtextborder{
+    border-left: 1em solid #F3B934;
+    padding-left: 0.5em;
+    margin-top: 1em;
+    font-size: 25px;
+       
+}
+
+.GAcolumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
 
-
-
-
-
-
-
-
+.GArow {
+ 
+  clear: both;
+  display: flex;
+  
+}
 
 
 
