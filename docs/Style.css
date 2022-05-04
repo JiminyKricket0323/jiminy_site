@@ -544,4 +544,31 @@ margin: 40px 12px 40px;
   
 }
 
+.GAfourcolumn {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  
+  
+}
+
+
+.GAfourrow {
+ 
+  clear: both;
+  display: flex;
+  padding-left: 38px;
+  
+  
+}
+
+    
+ .gaimagepadding{
+     
+    margin-bottom: 100px;
+    margin-left: 550px;
+    position: relative;
+    overflow: hidden;  
+ }   
+
     
