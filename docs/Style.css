@@ -513,20 +513,35 @@ margin: 40px 12px 40px;
        
 }
 
-.GAcolumn {
+.GAthreecolumn {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 70px;
+  
 }
 
 
-.GArow {
+.GAthreerow {
  
   clear: both;
   display: flex;
   
 }
+.GAtwocolumn {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  
+  
+}
 
 
+.GAtworow {
+ 
+  clear: both;
+  display: flex;
+  padding-right: 200px;
+  
+}
 
     
