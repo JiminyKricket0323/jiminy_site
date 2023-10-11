@@ -571,4 +571,15 @@ margin: 40px 12px 40px;
     overflow: hidden;  
  }   
 
+span {
+    background-color: #f0f0f0;
+    color:#333;
+    border: 1px solid #add;
+}
+
+span.on {
+    background-color: #ffcc00;
+    color: #fff;
+    border: 1px solid #ff9900;
+}
     
