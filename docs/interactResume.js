@@ -20,10 +20,7 @@ function init() {
     /* backToTopButton.addEventListener("click", onTop); */
     var originalBackground = document.body.style.backgroundColor;
     var button = document.getElementById('changeColorButton');
-    /* 2023-10-11 ebb: The line below just says only add the event listener if the button is actually present.
-     * Otherwise, don't bother! 
-     *  */
-    if (button !== null)
+    if (button == true)
     {button.addEventListener('click',changeColor, false)};
     var checkboxes = document.getElementsByTagName('input');
     for (var i = 0; i < checkboxes.length; i++) {
