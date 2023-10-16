@@ -571,19 +571,28 @@ margin: 40px 12px 40px;
     overflow: hidden;  
  }   
 
+<<<<<<< HEAD
 span {
 display: none;
+=======
+span { display:none;
+>>>>>>> refs/remotes/origin/main
     background-color: #f0f0f0;
     color:#333;
     border: 1px solid #add;
 }
 
+<<<<<<< HEAD
 span.on {
 display: block;
+=======
+span.Native.on {display:block;
+>>>>>>> refs/remotes/origin/main
     background-color: #ffcc00;
     color: #fff;
     border: 1px solid #ff9900;
 }
+<<<<<<< HEAD
 
 .logo {
     width: 300px; /* Adjust the width as needed */
@@ -602,3 +611,21 @@ display: block;
     justify-content: center;
     align-items: center;
     height: 100vh; /* 100% of the viewport height */   
+=======
+span.Intermediate.on {display:block;
+    background-color: #ffcc00;
+    color: red;
+    border: 1px solid #ff9900;
+}
+span.Fluent.on {display:block;
+    background-color: #ffcc00;
+    color: blue;
+    border: 1px solid #ff9900;
+}
+span.Basic.on {display:block;
+    background-color: #ffcc00;
+    color: green;
+    border: 1px solid #ff9900;
+}
+    
+>>>>>>> refs/remotes/origin/main
