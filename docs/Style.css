@@ -571,9 +571,10 @@ margin: 40px 12px 40px;
     overflow: hidden;  
  }   
 
-<<<<<<< HEAD
+
 span {
 display: none;
+}
 =======
 span { display:none;
 >>>>>>> refs/remotes/origin/main
@@ -585,6 +586,7 @@ span { display:none;
 <<<<<<< HEAD
 span.on {
 display: block;
+}
 =======
 span.Native.on {display:block;
 >>>>>>> refs/remotes/origin/main
@@ -594,23 +596,6 @@ span.Native.on {display:block;
 }
 <<<<<<< HEAD
 
-.logo {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-/* Apply hover animation */
-.logo:hover {
-    transform: scale(1.2); /* Scale up to 120% on hover */
-    opacity: 0.8; /* Reduce opacity on hover */
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* 100% of the viewport height */   
 =======
 span.Intermediate.on {display:block;
     background-color: #ffcc00;
@@ -628,4 +613,22 @@ span.Basic.on {display:block;
     border: 1px solid #ff9900;
 }
     
->>>>>>> refs/remotes/origin/main
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.NewLogo {
+    width: 300px; 
+    height: 300px; 
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Apply hover animation */
+.NewLogo:hover {
+    transform: scale(1.2); /* Scale up to 120% on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+}
