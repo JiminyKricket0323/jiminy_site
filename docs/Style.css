@@ -572,14 +572,33 @@ margin: 40px 12px 40px;
  }   
 
 span {
+display: none;
     background-color: #f0f0f0;
     color:#333;
     border: 1px solid #add;
 }
 
 span.on {
+display: block;
     background-color: #ffcc00;
     color: #fff;
     border: 1px solid #ff9900;
 }
-    
+
+.logo {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Apply hover animation */
+.logo:hover {
+    transform: scale(1.2); /* Scale up to 120% on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */   

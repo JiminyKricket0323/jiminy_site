@@ -11,13 +11,19 @@ function onTop() {
 }
 const backToTopButton = document.getElementById("backToTop");
 
-backToTopButton.addEventListener("click", onTop);
+/*backToTopButton.addEventListener("click", onTop);*/
 
 //ABOVE BUTTOM WORKS, but I'm not quite sure why the buttom for change color of my h1 isn't quite working
 
 function init() {
+    var originalBackground = document.body.style.backgroundColor;
     var button = document.getElementById('changeColorButton');
-    button.addEventListener('click',changeColor, false)
+    var checkboxes = document.getElementsByTagName('input');
+   
+    /*button.addEventListener('click',changeColor, false)*/
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener('click', toggleOn, false);
 }
 
 function changeColor() {
@@ -25,15 +31,28 @@ function changeColor() {
     heading.style.color = "black";
 }
 
-document.getElementById("changeColorButton").addEventListener("click", changeColor);
-
+/*document.getElementById("changeColorButton").addEventListener("click", changeColor);
+*/
 window.addEventListener('DOMContentLoaded', init, false);
 
+function toggleOn() {
+    var spans = document.getElementsByTagName('span');
+    for (var i = 0; i < spans.length; i++);
+    console.log(this.value)
+    var classAttribute = spans[i].querySelector('class');
+    console.log('classAttribute');
+ /*  What we want to do is match the class attribute to this.value */
+        if (spans[i].querySelector('class') == this.value);
+            {spans[i].classList('on');}
+        
+    }
+    
+}
 
 //From here to down is for the checkbox on RESUME page
 
 
-var originalBackground;
+/*var originalBackground;
 function toggleHighlight() {
     var pos = this.getAttribute('value');
     var color;
@@ -61,14 +80,8 @@ function toggleHighlight() {
             spans[i].style.backgroundColor = originalBackground;
         }
     }
-}
-function init() {
-    originalBackground = document.body.style.backgroundColor;
-    var checkboxes = document.getElementsByTagName('input');
-    for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].addEventListener('click', toggleHighlight, false);
-    }
-}
+}*/
+
 window.addEventListener('DOMContentLoaded', init, false);
 
 
