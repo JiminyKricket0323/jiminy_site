@@ -155,7 +155,13 @@ function toggleDisplay() {
 
 /*sadjfiasdmfa to make comment = command, shift, forward slash*/
 
+        const geometry = new THREE.BoxGeometry(10, 10, 10);
 
+        //set the color of the basic material in the object parameters `{}`
+
+        const material = new THREE.MeshBasicMaterial( { color: 0xFF6347 } );
+
+        const cube = new THREE.Mesh( geometry, material );
 
 
 
