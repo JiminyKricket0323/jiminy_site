@@ -1,74 +1,78 @@
 *{
-margin:0;
-padding:0;
-}
+      margin:0;
+      padding:0;
+  }
 body{
-    font-family: Garamond; 
-   
-     
-    
+    font-family: sans-serif;
+
+
+
 }
 
- 
+
 
 .header{
     min-height: 100vh;
     width: 100%;
     background-image:
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/taranaki.jpg);
+            linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/taranaki.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    
-    
+
+
 }
 nav{
+    position: absolute;
+    top: -10px;
+    right: -40px;
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    
-    
+    z-index: 2;
+
+
 }
 nav img{
     width: 300px;
 }
-  
+
 
 .nav-links{
     flex:1;
     text-align: right;
-      
+
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 20px;
     position: relative;
-    
+
 }
 .nav-links ul li a{
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 18px;
-    
+
 }
 
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #f44336;
+    background: black;
     display: block;
     margin: auto;
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
 .nav-links ul li:hover::after{
     width: 100%;
-    
-    
-    
+
+
+
 }
 
 .text-box {
@@ -79,12 +83,12 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    
-    
+
+
 }
- .text-box h1 {
+.text-box h1 {
     font-size: 62px;
-     
+
 }
 .text-box p {
     margin: 10px 0 40px;
@@ -102,7 +106,7 @@ nav img{
     background: transparent;
     position:relative;
     cursor: pointer;
-     
+
 }
 
 .click-box:hover{
@@ -113,13 +117,13 @@ nav .fa{
     display:none;
 }
 
- @media(max-width: 700px){
-     .text-box h1 {
-    font-size: 70px;
+@media(max-width: 700px){
+    .text-box h1 {
+        font-size: 70px;
     }
     .nav-links ul li{
         display: block;
-        
+
     }
     .nav-links {
         position:absolute;
@@ -130,7 +134,7 @@ nav .fa{
         right: 0;
         text-align: left;
         z-index: 2;
-        
+
     }
     nav .fa{
         display: block;
@@ -142,7 +146,7 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
- }
+}
 /*--------Travel----------*/
 
 .travel{
@@ -150,28 +154,28 @@ nav .fa{
     margin: auto;
     text-align:center;
     padding-top: 100px;
-    
+
 }
 h1{
     font-size:40px;
     font-weight:600;
-    
+
 }
 p{
-   color: #777; 
-   font-size: 20px;
-   font-weight: 300;
-   line-height: 22px;
-   padding: 30px;
-    
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+
 }
 
 .row{
-   margin-top: 5%;
-   display: flex;
-   justify-content: space-between;
-  
-    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
 }
 .happy{
     flex-basis:31%;
@@ -183,18 +187,18 @@ p{
     transition: 0.5s
 }
 h3{
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
 }
 .happy:hover{
-     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .places{
     width: 80%;
     margin: auto;
     text-align:center;
-    padding-top: 50px; 
+    padding-top: 50px;
 }
 
 .places-col{
@@ -204,7 +208,7 @@ h3{
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
-    
+
 }
 .places-col img{
     width:100%;
@@ -213,16 +217,16 @@ h3{
 }
 
 .layer{
-   background: transparent;
-   width:100%;
-   height:100%;
-   position:absolute;
-   top: 0;
-   left: 0px;
-   transition: 0.5s;
+    background: transparent;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0px;
+    transition: 0.5s;
 }
 .layer:hover{
-   background: rgba(167, 210, 241, 0.44);   
+    background: rgba(167, 210, 241, 0.44);
 }
 .layer h3{
     width: 90%;
@@ -245,52 +249,26 @@ h3{
     width:100%;
     text-align:center;
     padding: 30px 0;
-    
+
+
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
-    
+
 }
 .icon .fa{
-color: #f44336;
-margin: 0 13px;
-cursor: pointer;
-padding: 18px 0;
-    
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
 }
 .fa-heart-o{
-  color: #f44336;  
+    color: #f44336;
 }
 
-
-
-.galleryheader{
-    min-height: 100vh;
-    width: 100%;
-    background-image:
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/mickey.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-}
-
-.gallerytext-box {
-    width: 100%;
-    color:  #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-
-}
-
-.gallerytext-box h1 {
-    font-size: 62px;
-}
 
 .nostalgia{
     width: 90%;
@@ -303,54 +281,14 @@ padding: 18px 0;
 h2{
     font-size:32px;
     font-weight:600;
-    
-}
 
-
-
-.gi{
-
- 
-    margin-bottom: 100px;
-    margin-left: 35%;
-    position: relative;
-    overflow: hidden;
-    
-}
-.gi img{
-   
-    height:400px;
-    padding: 50px;
-    display: block;
-}
-
-
-
-.essaysheader{
-    min-height: 100vh;
-    width: 100%;
-    background-image:
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/heavenstairs.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    
- }
-
-
-
-.reflectionessay p {
-margin: 40px 12px 40px;
-    font-size: 25px;
-    text-align:center
-     
 }
 
 .resumeheader{
     min-height: 100vh;
     width: 100%;
     background-image:
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/rotorua.jpg);
+            linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/rotorua.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -364,17 +302,17 @@ margin: 40px 12px 40px;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    
-    
+
+
 }
- .resumetext-box h1 {
+.resumetext-box h1 {
     font-size: 62px;
-     
+
 }
 
 .resume{
     padding: 50px;
-     width: 90%;
+    width: 90%;
     margin: auto;
     text-align:center;
     padding-top: 80px;
@@ -389,7 +327,7 @@ margin: 40px 12px 40px;
 }
 
 .container {
-    
+
     width:560px;
     height:315px;
     margin:auto;
@@ -397,31 +335,19 @@ margin: 40px 12px 40px;
     padding-bottom: 50px;
 }
 
-.textanalysistable,td {
-   width: 180px;
-   margin: auto;
-   font-size: 20px;
-   text-align: center;
-   padding: 5px;
-   border:2px solid #000;
-   border-collapse: collapse;
-   
-    
-}
-
 .ngramfor154{
     height: 20%;
     width: 20px;
-   
+
 }
 
 .TAcolumn {
-  float: left;
-  width: 45%;
-  padding: 5px;
-  padding-left: 25px;
-  
-    
+    float: left;
+    width: 45%;
+    padding: 5px;
+    padding-left: 25px;
+
+
 }
 
 .TArow {
@@ -430,24 +356,24 @@ margin: 40px 12px 40px;
     clear: both;
     text-align:center;
     margin: 50px;
-    
+
 }
 
 .mrcolumn {
-  float: left;
-  width: 45%;
-  padding: 20px;
-  
-  
-    
+    float: left;
+    width: 45%;
+    padding: 20px;
+
+
+
 }
 
 .mrrow {
     content: "";
     display: table;
     margin-left: 17%;
-    
- }
+
+}
 
 .ngram{
     margin: 50px;
@@ -465,165 +391,19 @@ margin: 40px 12px 40px;
     text-align:center;
 }
 
-.gameanalysisheader{
-    min-height: 100vh;
-    width: 100%;
-    background-image:
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/2.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-}
-
-.gameanalysistext-box {
-    width: 90%;
-    color:  #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    
-    
-}
- .gameanalysistext-box h1 {
-    font-size: 62px;
-
-}
-
-.kumu{
-    margin:auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    padding-left: 170px;
- 
-}
-
-.kumutitle{
-    padding-left: 30px;
-    color: #395E18;
-}
-
-.GAtextborder{
-    border-left: 1em solid #F3B934;
-    padding-left: 0.5em;
-    margin-top: 1em;
-    font-size: 25px;
-       
-}
-
-.GAthreecolumn {
-  float: left;
-  width: 33.33%;
-  padding: 70px;
-  
-}
 
 
-.GAthreerow {
- 
-  clear: both;
-  display: flex;
-  
-}
-.GAtwocolumn {
-  float: left;
-  width: 50%;
-  padding: 5px;
-  
-  
-}
-
-
-.GAtworow {
- 
-  clear: both;
-  display: flex;
-  padding-right: 200px;
-  
-}
-
-.GAfourcolumn {
-  float: left;
-  width: 25%;
-  padding: 5px;
-  
-  
-}
-
-
-.GAfourrow {
- 
-  clear: both;
-  display: flex;
-  padding-left: 38px;
-  
-  
-}
-
-    
- .gaimagepadding{
-     
-    margin-bottom: 100px;
-    margin-left: 550px;
-    position: relative;
-    overflow: hidden;  
- }   
-
-
-span {
-display: none;
-}
-=======
-span { display:none;
->>>>>>> refs/remotes/origin/main
-    background-color: #f0f0f0;
-    color:#333;
-    border: 1px solid #add;
-}
-
-<<<<<<< HEAD
-span.on {
-display: block;
-}
-=======
-span.Native.on {display:block;
->>>>>>> refs/remotes/origin/main
-    background-color: #ffcc00;
-    color: #fff;
-    border: 1px solid #ff9900;
-}
-<<<<<<< HEAD
-
-=======
-span.Intermediate.on {display:block;
-    background-color: #ffcc00;
-    color: red;
-    border: 1px solid #ff9900;
-}
-span.Fluent.on {display:block;
-    background-color: #ffcc00;
-    color: blue;
-    border: 1px solid #ff9900;
-}
-span.Basic.on {display:block;
-    background-color: #ffcc00;
-    color: green;
-    border: 1px solid #ff9900;
-}
-    
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .NewLogo {
-    width: 300px; 
-    height: 300px; 
+    width: 300px;
+    height: 300px;
     transition: transform 0.3s, opacity 0.3s;
 }
 
@@ -637,4 +417,132 @@ canvas{
     position:fixed;
     top: 0;
     left: 0;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.parallax {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 1.webp")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.parallaxproject
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 2.jpeg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+.parallaxfuture
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 3.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.parallaxresume
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 4.jpeg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+.parallaxcontact
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 7.jpeg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.parallaxhome
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/gradient 6.jpeg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0);
+}
+
+
+.desc{
+    background: black;
+    padding: 50px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.hero-text{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 100vh;
+    margin-top: 20px;
+
 }

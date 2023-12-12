@@ -163,10 +163,17 @@ function toggleDisplay() {
 
         const cube = new THREE.Mesh( geometry, material );
 
+    });
 
 
 
+        document.getElementById('linkedin-icon').addEventListener('click', function() {
+        window.location.href = 'https://www.linkedin.com/in/your-linkedin-profile';
+    });
 
+        document.getElementById('github-icon').addEventListener('click', function() {
+        window.location.href = 'https://github.com/your-github-profile';
+    });
 
 
 

@@ -1,73 +1,30 @@
-import * as THREE from 'three';
 
-const scene = new THREE.Scene();
+window.addEventListener("scroll", () => {
+    let scroll = window.scrollY; // corrected to window.scrollY
+    const section = document.querySelector("section");
+    const overlay = document.querySelector(".overlay");
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-
-// create a new renderer by instating the canvas element in our HTML // file
-const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#bg'),
+    section.style.backgroundSize = `${100 + (scroll * 0.1)}%`; // corrected the syntax
+    overlay.style.background = `rgba(0, 0, 0, ${scroll * 1.7 / window.innerHeight})`; // corrected the syntax
 });
 
-renderer.render(scene, camera);
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(50);
-camera.position.setX(-3);
+window.addEventListener('scroll', function(e){
 
-const geometry = new THREE.BoxGeometry(10, 10, 10);
-
-//set the color of the basic material in the object parameters `{}`
-
-const material = new THREE.MeshBasicMaterial( { color: 0xFF6347 } );
-
-const cube = new THREE.Mesh( geometry, material );
-
-cube.position.z = -15;
-cube.position.x = -15;
-
-cube.rotation.x = 2;
-cube.rotation.y = .5;
-
-const ico = new THREE.IcosahedronGeometry(10);
-const icoMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
-const icoMesh = new THREE.Mesh(ico, icoMaterial);
-
-scene.add(icoMesh);
-
-icoMesh.position.z= -15;
-icoMesh.position.x= 15;
-
-// Lights
-
-const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(0, -10, 10);
-
-const ambientLight = new THREE.AmbientLight(0xffffff);
-ambientLight.position.set(25, -15, -400);
-
-scene.add(pointLight);
-scene.add(ambientLight);
+    const target = document. querySelectorAll('.GLscroll');
 
 
-function animate() {
-    requestAnimationFrame( animate );
-    // slowly rotate the cube:
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-    // rotate the icosahedron a little faster in the opposite direction:
-    icoMesh.rotation.z += -0.03
-    icoMesh.rotation.y += -0.03
+    var index = 0, length = target.length;
+    for (index; index < length; index ++) {
+        var pos = window.pageYOffset * target[index].dataset.rate;
 
-    renderer.render( scene, camera );
-}
-animate();
+        if(target[index].dataset.direction === 'vertical') {
+            target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
+        } else {
+            var posX = window.pageYOffset * target[index].dataset.ratex;
+            var posY = window.pageYOffset * target[index].dataset.ratey;
 
+            target[index].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
+        }
+    }
 
-
-
-
-
-
-
+});
