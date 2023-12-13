@@ -1,27 +1,247 @@
+/*Resume*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 *{
-      margin:0;
-      padding:0;
-  }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #f52582;
+    --text-color: #727171
+}
+html {
+    font-size: 10px;
+}
 body{
-    font-family: sans-serif;
-
-
-
+    font-family: Poppins, sans-serif;
+    background-color: black;
+    color: white;
 }
-
-
-
-.header{
-    min-height: 100vh;
+img {
     width: 100%;
-    background-image:
-            linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/taranaki.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-
 }
+a {
+    text-decoration: none;
+    color: white;
+}
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.item_preTitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: black;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group-1,
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.group-3 {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.group-3 > div {
+    flex: 1;
+}
+@media only screen and (max-width: 768px) {
+    .profile {
+        margin-bottom: 0;
+    }
+    .group-3 {
+        flex-direction: column;
+    }
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 10rem;
+}
+.profile_profileImg {
+    max-width: 450px;
+}
+.profile_name_firstName {
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downloadBtn {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.downloadBtn:hover {
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* Expertise */
+.skills_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* Ref  */
+.ref_item {
+    margin-top: 2rem;
+}
+.ref_name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* eduction */
+.edu_item {
+    margin-top: 2rem;
+}
+
+/* certification */
+.certification_item {
+    margin-top: 2rem;
+}
+/* exp */
+.exp_item {
+    margin-top: 2rem;
+}
+
+/* awards */
+.awards_item {
+    margin-top: 2rem;
+}
+/* Interests */
+.interest_items {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.interest_item {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+.interest_item svg {
+    width: 2rem;
+}
+
+/* socials */
+.social_items {
+    margin-top: 2rem;
+}
+.social_item {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+.social_item:hover {
+    color: var(--primary-color);
+}
+.social_item svg {
+    width: 2rem;
+}
+
+hr {
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+@media only screen and (max-width: 768px) {
+    hr {
+        margin: 0 auto;
+    }
+}
+/*resume end*/
+
+body{
+    font-family: Poppins, sans-serif
+}
+
 nav{
     position: absolute;
     top: -10px;
@@ -30,32 +250,29 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
-
-
+    z-index: 10;
 }
+
 nav img{
     width: 300px;
 }
 
-
 .nav-links{
     flex:1;
     text-align: right;
-
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 20px;
     position: relative;
-
 }
+
 .nav-links ul li a{
     color: black;
     text-decoration: none;
     font-size: 18px;
-
 }
 
 .nav-links ul li::after{
@@ -70,51 +287,6 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 100%;
-
-
-
-}
-
-.text-box {
-    width: 90%;
-    color:  #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-
-
-}
-.text-box h1 {
-    font-size: 62px;
-
-}
-.text-box p {
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
-}
-
-.click-box{
-    display:inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 15px;
-    background: transparent;
-    position:relative;
-    cursor: pointer;
-
-}
-
-.click-box:hover{
-    border:1px solid #f44336;
-    transition: 1s;
-}
-nav .fa{
-    display:none;
 }
 
 @media(max-width: 700px){
@@ -133,7 +305,7 @@ nav .fa{
         top: 0;
         right: 0;
         text-align: left;
-        z-index: 2;
+        z-index: 10;
 
     }
     nav .fa{
@@ -156,19 +328,8 @@ nav .fa{
     padding-top: 100px;
 
 }
-h1{
-    font-size:40px;
-    font-weight:600;
 
-}
-p{
-    color: #777;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 30px;
 
-}
 
 .row{
     margin-top: 5%;
@@ -186,11 +347,7 @@ p{
     box-sizing: border-box;
     transition: 0.5s
 }
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
+
 .happy:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
@@ -278,122 +435,6 @@ h3{
 
 }
 
-h2{
-    font-size:32px;
-    font-weight:600;
-
-}
-
-.resumeheader{
-    min-height: 100vh;
-    width: 100%;
-    background-image:
-            linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/rotorua.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.resumetext-box {
-    width: 90%;
-    color:  #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-
-
-}
-.resumetext-box h1 {
-    font-size: 62px;
-
-}
-
-.resume{
-    padding: 50px;
-    width: 90%;
-    margin: auto;
-    text-align:center;
-    padding-top: 80px;
-
-}
-
-.resume h1{
-    font-size:32px;
-    font-weight:600;
-    padding-bottom: 30px;
-
-}
-
-.container {
-
-    width:560px;
-    height:315px;
-    margin:auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-
-.ngramfor154{
-    height: 20%;
-    width: 20px;
-
-}
-
-.TAcolumn {
-    float: left;
-    width: 45%;
-    padding: 5px;
-    padding-left: 25px;
-
-
-}
-
-.TArow {
-    content: "";
-    display: table;
-    clear: both;
-    text-align:center;
-    margin: 50px;
-
-}
-
-.mrcolumn {
-    float: left;
-    width: 45%;
-    padding: 20px;
-
-
-
-}
-
-.mrrow {
-    content: "";
-    display: table;
-    margin-left: 17%;
-
-}
-
-.ngram{
-    margin: 50px;
-}
-
-.TAP {
-    text-align:center;
-    margin: 50px;
-    font-size: 20pt;
-    color: #000;
-}
-
-
-.links {
-    text-align:center;
-}
-
-
-
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -427,18 +468,19 @@ canvas{
     box-sizing: border-box;
 
 }
-.parallax {
+.parallaxgallery {
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("image/gradient 1.webp")no-repeat;
+    background: url("image/gradient 9.jpeg")no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .parallaxproject
@@ -446,7 +488,7 @@ canvas{
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("image/gradient 2.jpeg")no-repeat;
+    background: url("image/gradient 17.jpeg")no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -460,7 +502,7 @@ canvas{
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("image/gradient 3.jpg")no-repeat;
+    background: url("image/gradient 15.jpeg")no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -504,7 +546,7 @@ canvas{
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("image/gradient 6.jpeg")no-repeat;
+    background: url("image/gradient 14.webp")no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -512,6 +554,7 @@ canvas{
     align-items: center;
     font-size: 5rem;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .overlay{
@@ -521,19 +564,38 @@ canvas{
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0);
+    z-index: 2;
 }
 
 
 .desc{
     background: black;
     padding: 50px;
+
+
+}
+.quote{
+    font-size: 50px;
     color: white;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 100px;
     margin-bottom: 20px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+.BFname{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    padding-left: 70%;
 }
 .hero-text{
+    font-size: 100px;
+    color: black;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -544,5 +606,33 @@ canvas{
     place-items: center;
     height: 100vh;
     margin-top: 20px;
+    z-index: 3;
 
+}
+.hero-text-home{
+    font-size: 100px;
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 100vh;
+    margin-top: 20px;
+    z-index: 3;
+
+}
+.overlay-image {
+
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the entire container */
+    opacity: 100%; /* Adjust the opacity as needed */
+    z-index: 1; /* Ensure the overlay image is behind other content */
 }
