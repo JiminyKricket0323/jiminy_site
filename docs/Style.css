@@ -18,7 +18,7 @@ body{
     background-color: black;
     color: white;
 }
-img {
+.resumeimg {
     width: 100%;
 }
 a {
@@ -322,32 +322,99 @@ nav img{
 /*--------Travel----------*/
 
 .travel{
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align:center;
+    font-size: 50px;
     padding-top: 100px;
+    padding-bottom: 20px;
+
+}
+.aboutme{
+    width: 80%;
+    margin-top: 50%;
+    font-size: 20px;
+    display: block;
+    padding-top: 5px;
+
+
+}
+.AbtMe{
+    color: white;
+    flex-basis: 31%;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+}
+.AbtMe p {
+    margin-bottom: 70px;
+}
+
+.personalvalues {
+    width: 50%;
+    margin-top: 50%;
+    font-size: 20px;
+    display: block;
+    padding-bottom: 20px;
+
+}
+.pvtitle {
+    font-size: 60px;
+    padding-bottom: 100px;
+    text-align: left;
 
 }
 
+.pvsubtitle{
+    padding-bottom: 40px;
+    text-align: left;
+    font-size: 30px;
 
+}
+.pv1 {
+    color: white;
+    flex-basis: 31%;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative; /* Add position:relative for absolute positioning inside */
+}
 
-.row{
+.pv2 {
+    color: white;
+    flex-basis: 31%;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative; /* Add position:relative for absolute positioning inside */
+}
+.pv3 {
+    color: white;
+    flex-basis: 31%;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative; /* Add position:relative for absolute positioning inside */
+
+}
+.row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
-
-
 }
-.happy{
-    flex-basis:31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s
-}
-
 .happy:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
@@ -356,6 +423,7 @@ nav img{
     margin: auto;
     text-align:center;
     padding-top: 50px;
+    padding-bottom: 20%;
 }
 
 .places-col{
@@ -388,7 +456,7 @@ nav img{
 .layer h3{
     width: 90%;
     font-weight:500;
-    color: #fff;
+    color: white;
     font-size: 20px;
     bottom: 0;
     left: 50%;
@@ -454,7 +522,7 @@ nav img{
     opacity: 0.8; /* Reduce opacity on hover */
 }
 
-canvas{
+.canvas{
     position:fixed;
     top: 0;
     left: 0;
@@ -546,8 +614,7 @@ canvas{
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("image/gradient 14.webp")no-repeat;
-    background-position: center;
+    background: url("image/gradient 14.webp") no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -635,4 +702,101 @@ canvas{
     object-fit: cover; /* Maintain aspect ratio while covering the entire container */
     opacity: 100%; /* Adjust the opacity as needed */
     z-index: 1; /* Ensure the overlay image is behind other content */
+}
+.svg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin-bottom: 40px;/* Ensure the container has sufficient height */
+
+}
+
+.blob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+}
+.blob:hover:nth-child(2) {
+    filter: blur(9px);
+}
+.githubblob{
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.svg2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.secondblob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+
+}
+.secondblob:hover:nth-child(2) {
+    filter: blur(9px);
+}
+.linkedinblob{
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectdiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.PJsection{
+    margin-block: 50px;
+    padding-bottom: 50px;
+
+}
+.PJsection{
+    text-align: left;
+
+
+}
+
+.projectdiv img{
+
+    background-color: #1a1a1a;
+
+    display: block;
+    color: white;
+    flex-basis: calc(33.333% - 20px);
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin: 0;
+}
+.projectdiv p{
+
+    font-size: 20px;
 }
